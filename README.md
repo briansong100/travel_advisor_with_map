@@ -8,3 +8,4 @@ The weather info is also displayed on the map together with places(hotels, resta
 
 The function of serching location is blocked by google with payment issue
 
+please check: https://travel-advisor-brian.netlify.app/
