@@ -26,14 +26,15 @@ const Header = ({setCordinates}) => {
 						Explore new places
 					</Typography>
 					<Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged} key="AIzaSyB2bjoUeFp9fwt9RMVB44lCjEic8WM_9FU">
-          {/* <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged} > */}
-            <div className={css.search}>
-              <div className={css.searchIcon}>
-                <SearchIcon />
-              </div>
-              <InputBase placeholder="Search…" classes={{ root: css.inputRoot, input: css.inputInput }} />
-            </div>
-          </Autocomplete>
+					// It can be open when you register the paid API
+	  			{/* <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged} > */}
+						<div className={css.search}>
+							<div className={css.searchIcon}>
+								<SearchIcon />
+							</div>
+							<InputBase placeholder="Search…" classes={{ root: css.inputRoot, input: css.inputInput }} />
+						</div>
+	  			</Autocomplete>
 				</Box>	
 			</Toolbar>
 		</AppBar>
