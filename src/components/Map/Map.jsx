@@ -1,4 +1,4 @@
-import React from 'react'
+
 import GoogleMapReact from 'google-map-react'
 import { Paper, Typography, useMediaQuery } from '@material-ui/core'
 import Rating from '@material-ui/lab/Rating'
@@ -36,7 +36,7 @@ const Map = ({places, setCordinates, setBoundarys, setChildCliked, cordinates, w
                 <LocationOnOutlinedIcon />
               ):(
                 <Paper elevation={3} className={css.paper} >
-                  <Typography gutterBottom variant='subtitle2'  >
+                  <Typography gutterBottom variant='subtitle2' >
                       {place.name}
                   </Typography>
                   <img className={css.pointer} src={ place.photo ? place.photo.images.thumbnail.url : restImage } alt={place.name} />
@@ -52,8 +52,6 @@ const Map = ({places, setCordinates, setBoundarys, setChildCliked, cordinates, w
           </div>
         ))}
         </GoogleMapReact>
-
-
       </div>
   )
 }
