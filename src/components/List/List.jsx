@@ -1,4 +1,4 @@
-import React ,{useState, useEffect, createRef }from 'react'
+import {useState, useEffect, createRef }from 'react'
 import {CircularProgress, Grid, Typography, InputLabel, FormControl, MenuItem, Select } from '@material-ui/core'
 
 import useStyles from  './styles'
@@ -18,9 +18,7 @@ const List = ({places, childCliked, isLoading, type, setType, rating, setRating 
     // console.log(places?.length, elementRefs)
   },[places])
 
-  // console.log({childCliked})
   return (
-
     <div className={css.container}>
       <Typography variant='h4' >Restaurants, Hotels, and Attractions around you</Typography>
       { isLoading ? (
